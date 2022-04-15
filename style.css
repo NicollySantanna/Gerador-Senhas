@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 auto;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(36, 2, 68);
+}
+
+h1{
+max-width: 600px;
+margin-bottom: 24px;
+color: white;
+font-size: 52px;
+}
+
+.container {
+    max-width: 480px;
+    margin: 14px 0;
+}
+
+.container span {
+    color: white;
+}
+
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 5px;
+    background-color: white;
+    height: 18px;
+    outline: none;
+    margin-top: 8px;
+}
+
+.btn-gerar {
+    height: 48px;
+    background-color: rgb(109, 15, 197);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor:pointer;
+    margin-top: 48px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container-password{
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+#password{
+    height: 68px;
+    background-color: rgba(0, 0, 0, 0.40);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid #1a0022;
+    transition: transform 0.4s;
+}
+
+#password:hover{
+    transform: scale(1.05);
+}
+
+
+.copiar{
+    color: white;
+    position: relative;
+    top: 20px;
+    background-color: rgba(0, 0, 0, 0.40);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.container-password:hover #copiar{
+visibility: visible;
+bottom: 50px;
+opacity: 1;
+}
+
+.hide {
+    display: none;
+}
